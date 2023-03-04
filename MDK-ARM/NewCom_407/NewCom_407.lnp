@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"newcom_407\startup_stm32f407xx.o"
+"newcom_407\main.o"
+"newcom_407\stm32f4xx_it.o"
+"newcom_407\stm32f4xx_hal_msp.o"
+"newcom_407\komunikasi.o"
+"newcom_407\stm32f4xx_hal_tim.o"
+"newcom_407\stm32f4xx_hal_tim_ex.o"
+"newcom_407\stm32f4xx_hal_uart.o"
+"newcom_407\stm32f4xx_hal_rcc.o"
+"newcom_407\stm32f4xx_hal_rcc_ex.o"
+"newcom_407\stm32f4xx_hal_flash.o"
+"newcom_407\stm32f4xx_hal_flash_ex.o"
+"newcom_407\stm32f4xx_hal_flash_ramfunc.o"
+"newcom_407\stm32f4xx_hal_gpio.o"
+"newcom_407\stm32f4xx_hal_dma_ex.o"
+"newcom_407\stm32f4xx_hal_dma.o"
+"newcom_407\stm32f4xx_hal_pwr.o"
+"newcom_407\stm32f4xx_hal_pwr_ex.o"
+"newcom_407\stm32f4xx_hal_cortex.o"
+"newcom_407\stm32f4xx_hal.o"
+"newcom_407\stm32f4xx_hal_exti.o"
+"newcom_407\system_stm32f4xx.o"
+--strict --scatter "NewCom_407\NewCom_407.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NewCom_407.map" -o NewCom_407\NewCom_407.axf
